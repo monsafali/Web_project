@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="Name">Name and Address</p>
+  <div id="wraper">
+    
+    <form id="myForm" onsubmit="return validateForm()">
+    <table>
+      <tr>
+        <td>
+          Do you use Civil CRM?
+        </td>
+        <td>
+          <div class="second">
+            <input type="radio" id="yesOption" class="radio-container" name="options" value="yes">
+            <label for="yesOption">Yes</label>
+            <input type="radio" id="noOption" class="radio-container" name="options" value="no">
+            <label for="noOption">No</label>
+            <a href="#" id="unselectLink">(unselect)</a>
+          </div>
+        </td>
+      </tr>
+<!-- Line number 2 Civil CRM? -->
+
+      <tr>
+        <td>
+          <label for="CivilCRM">How long have you been using CivilCRM?</label>
+        </td>
+        <td>
+          <div class="second">
+            <select class="select" id="CivilCRM">
+             <option> - Select -</option>
+              <option>Pakistan</option>
+              <option>INDIA</option>
+              <option>BANGLA DESh</option>
+              <option>DUbai</option>
+              <option>UK</option>
+              <option>USA</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+
+
+      <!-- Line No 3 -->
+
+      <tr>
+        <td>
+          <label for="second">Which CMS do you use?</label>
+        </td>
+        <td>
+          <div class="second">
+            <select class="select two" id="second">
+             <option> - Select -</option>
+              <option>Pakistan</option>
+              <option>INDIA</option>
+              <option>china</option>
+              <option>DUbai</option>
+              <option>UK</option>
+              <option>USA</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+
+      <!-- line no 4 -->
+      <tr>
+        <td>
+          <label for="skill">Which SKill set?</label>
+        </td>
+        <td>
+          <div class="second">
+            <select class="select two" id="skill">
+             <option> -Select -</option>
+              <option>LInux Admin</option>
+              <option>Devops Engineer</option>
+              <option>Webdeveloper</option>
+              <option>AI</option>
+              <option>python developr</option>
+            </select>
+          </div>
+        </td>
+      </tr>
+<!-- Email -->
+
+      <tr>
+        <td>
+         <label for="emailInput" onclick="focusInput('emailInput')">Email*</label>
+        </td>
+        <td>
+          <div class="second" >
+            <input type="text" id="emailInput">
+          </div>
+        </td>
+      </tr>
+
+      <!-- F Name -->
+      <tr>
+        <td>
+          <label for="fname" onclick="focusInput('fname')">Name*</label>
+        </td>
+        <td>
+          <div class="second">
+            <input type="text" id="fname">
+          </div>
+        </td>
+      </tr>
+
+<!-- L Name -->
+
+<tr>
+  <td>
+    <label for="LNameInput" onclick="focusInput('LNameInput')">Last Name*</label>
+  </td>
+  <td>
+    <div class="second">
+      <input type="text" id="LNameInput">
+
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+ 
+  </td>
+  <td>
+  <div class="data">
+    Firs and last Name willl be shared with other visitors to the site
+  </div>
+  </td>
+</tr>
+<tr> 
+
+<!-- Address -->
+<tr>
+  <td>
+    <label for="specificInput" onclick="focusInput('specificInput')">Street Address (Home)</label>
+  </td>
+  <td>
+    <div class="second">
+      <input type="text" id="specificInput">
+    </div>
+  </td>
+</tr>
+<!-- City Home -->
+<tr>
+  <td>
+  <label for="city" onclick="focusInput('city')">City (Home)</label>
+  </td>
+  <td>
+    <div class="second">
+      <input type="text" id="city">
+    </div>
+  </td>
+</tr>
+
+<!-- postal Code -->
+<tr>
+  <td>
+  <label for="Postal" onclick="focusInput('Postal')">Postal Code (Home)</label>
+  </td>
+  <td>
+    <div class="second">
+      <input type="text" id="Postal">
+    </div>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td>
+    <label for="countryhome">Country (home)</label>
+  </td>
+  <td>
+    <div class="second">
+      <select class="select two" id="countryhome">
+       <option> -Select -</option>
+        <option selected>United State</option>
+        <option>Pakistan</option>
+        <option>Dubai</option>
+        <option>India</option>
+        <option>China</option>
+      </select>      
+    </div>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td>
+ 
+  </td>
+  <td>
+    <div class="data">Your state/provice and country of residence will be shar ed with others so folks
+      can find others in their community</div>
+  </td>
+</tr>
+<tr> 
+
+
+  <tr>
+    <td>
+      <label for="statehome">State (home)</label>
+    </td>
+    <td>
+      <div class="second">
+        <select class="select two" id="statehome">
+         <option>-Select -</option>
+          <option>United State</option>
+          <option>Pakistan</option>
+          <option>Dubai</option>
+          <option>India</option>
+          <option>China</option>
+        </select>      
+      </div>
+    </td>
+  </tr>
+ 
+    </table>
+    <div class="finalsubmit">
+      <button type="submit">Submit</button>
+      <!-- Cancel button -->
+      <button type="button" onclick="cancelForm()">Cancel</button>
+    </div>
+  
+  </form>
+  </div>
+ 
+ <script src="app.js"></script>
+</body>
+</html>

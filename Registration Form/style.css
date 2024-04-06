@@ -1,0 +1,88 @@
+body {
+    margin: 20px;
+}
+
+#wraper {
+    height: 90%;
+    width: 70%;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px;
+}
+.second {
+    margin-left: 10px;
+}
+.second a {
+    margin-left: 5px;
+}
+
+/* second line */
+
+.select{
+    border-radius: 5px;
+    margin-bottom: 5px;   
+}
+
+
+
+/* Address  */
+#specificInput {
+    width: 250px; /* Set the desired width */
+  }
+#Postal {
+    width: 80px;
+}
+
+#Name{
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: white;
+}
+
+#submit {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 180px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#submit button {
+    border-radius: 15px;
+    padding: 5px;
+    height: 25px;
+    width: 75px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+}
+
+
+.data {
+   margin-left: 8px;
+}
+
+
+/* Submit */
+
+.finalsubmit {
+    height: 50px;
+    width: 130px;
+    /* border: 1px solid black; */
+    display: flex;;
+    align-items: flex-start;;
+    justify-content: space-between;
+    position: absolute;
+    top: 460px; 
+}
+.finalsubmit button {
+    border-radius: 20px;
+    padding: 3px;
+    right: 20px;
+}
