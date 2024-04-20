@@ -15,6 +15,7 @@ body {
 }
 .second {
     margin-left: 10px;
+   
 }
 .second a {
     margin-left: 5px;
@@ -24,22 +25,20 @@ body {
 
 .select{
     border-radius: 5px;
-    margin-bottom: 5px;   
-}
-
-#skill {
-    width: 150px;
+    margin-bottom: 5px;  
+    width: 184px; 
+    text-align: center;
 }
 
 
 /* Address  */
 #specificInput {
-    width: 250px; 
+    /* width: 250px;  */
   }
 
-#Postal {
+/* #Postal {
     width: 80px;
-}
+} */
 
 #Name{
     background-color: white;
@@ -94,5 +93,6 @@ body {
     padding: 3px;
     right: 20px;
 }
+
 
 

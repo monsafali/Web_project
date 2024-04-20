@@ -11,7 +11,7 @@
   <div id="wraper">
     <div id="text">  
     <p id="Name">Name and Address</p>
-    <form id="myForm" onsubmit="return validateForm()">
+    <form id="myForm" onsubmit="return validateForm()" action="new.html">
     <table>
       <tr>
         <td>
@@ -96,7 +96,7 @@
         </td>
         <td>
           <div class="second" >
-            <input type="text" id="emailInput">
+            <input type="email" id="emailInput">
           </div>
         </td>
       </tr>
@@ -228,7 +228,7 @@
  
     </table>
     <div class="finalsubmit">
-      <a href="https://www.google.com/"><button type="submit">save</button></a>
+      <a href="new.html"><button type="submit">save</button></a>
       
       <!-- Cancel button -->
       <button type="button" onclick="cancelForm()">Cancel</button>
