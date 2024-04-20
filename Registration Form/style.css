@@ -4,11 +4,14 @@ body {
 
 #wraper {
     height: 90%;
-    width: 70%;
+    width: 60%;
     border: 1px solid black;
     overflow: hidden;
     margin: auto;
-    padding: 20px;
+    padding: 20px;  
+}
+#text {
+    margin-top: -10px;
 }
 .second {
     margin-left: 10px;
@@ -24,22 +27,24 @@ body {
     margin-bottom: 5px;   
 }
 
+#skill {
+    width: 150px;
+}
 
 
 /* Address  */
 #specificInput {
-    width: 250px; /* Set the desired width */
+    width: 250px; 
   }
+
 #Postal {
     width: 80px;
 }
 
 #Name{
-    margin: auto;
-    position: absolute;
-    top: 10px;
-    left: 200px;
     background-color: white;
+    position: absolute;
+    margin-top: -20px;
 }
 
 #submit {
@@ -73,16 +78,21 @@ body {
 
 .finalsubmit {
     height: 50px;
-    width: 130px;
+    width: 150px;
     /* border: 1px solid black; */
     display: flex;;
     align-items: flex-start;;
     justify-content: space-between;
     position: absolute;
-    top: 460px; 
+    margin-top: 25px;
+    margin-left: -20px;
 }
 .finalsubmit button {
+    width: 60px;
+    /* font-weight: bold; */
     border-radius: 20px;
     padding: 3px;
     right: 20px;
 }
+
+

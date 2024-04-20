@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p id="Name">Name and Address</p>
+
   <div id="wraper">
-    
+    <div id="text">  
+    <p id="Name">Name and Address</p>
     <form id="myForm" onsubmit="return validateForm()">
     <table>
       <tr>
@@ -38,7 +39,7 @@
              <option> - Select -</option>
               <option>Pakistan</option>
               <option>INDIA</option>
-              <option>BANGLA DESh</option>
+              <option>BANGLA DESH</option>
               <option>DUbai</option>
               <option>UK</option>
               <option>USA</option>
@@ -58,13 +59,13 @@
           <div class="second">
             <select class="select two" id="second">
              <option> - Select -</option>
-              <option>Pakistan</option>
-              <option>INDIA</option>
-              <option>china</option>
-              <option>DUbai</option>
-              <option>UK</option>
-              <option>USA</option>
-            </select>
+              <option>cc</option>
+              <option>bb</option>
+              <option>dd</option>
+              <option>ff</option>
+              <option>gg</option>
+              <option>kk</option>
+              
           </div>
         </td>
       </tr>
@@ -79,7 +80,7 @@
             <select class="select two" id="skill">
              <option> -Select -</option>
               <option>LInux Admin</option>
-              <option>Devops Engineer</option>
+              <option>Devops </option>
               <option>Webdeveloper</option>
               <option>AI</option>
               <option>python developr</option>
@@ -103,7 +104,7 @@
       <!-- F Name -->
       <tr>
         <td>
-          <label for="fname" onclick="focusInput('fname')">Name*</label>
+          <label for="fname" onclick="focusInput('fname')">First Name*</label>
         </td>
         <td>
           <div class="second">
@@ -164,11 +165,11 @@
 <!-- postal Code -->
 <tr>
   <td>
-  <label for="Postal" onclick="focusInput('Postal')">Postal Code (Home)</label>
+  <label for="Postal" onclick="focusInput('Postal')">Postal Code </label>
   </td>
   <td>
     <div class="second">
-      <input type="text" id="Postal">
+      <input type="number" id="Postal">
     </div>
   </td>
 </tr>
@@ -227,12 +228,14 @@
  
     </table>
     <div class="finalsubmit">
-      <button type="submit">Submit</button>
+      <a href="https://www.google.com/"><button type="submit">save</button></a>
+      
       <!-- Cancel button -->
       <button type="button" onclick="cancelForm()">Cancel</button>
     </div>
-  
+
   </form>
+</div>
   </div>
  
  <script src="app.js"></script>
