@@ -26,19 +26,19 @@ body {
 .select{
     border-radius: 5px;
     margin-bottom: 5px;  
-    width: 184px; 
+    /* width: 184px;  */
     text-align: center;
 }
 
 
 /* Address  */
 #specificInput {
-    /* width: 250px;  */
+    width: 250px; 
   }
 
-/* #Postal {
+#Postal {
     width: 80px;
-} */
+}
 
 #Name{
     background-color: white;
