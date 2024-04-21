@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+}
+table tr td {
+    font-size: 15px;
+}
+
+.bottom {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.noborder {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+td {
+    border: 3px solid black;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+td sub,
+td sup {
+    font-weight: normal;
+}
+
+/* 
+.about{
+    position: absolute;
+    top: 85px;
+    right: 330px;
+    justify-content: start;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    z-index: 1;
+} */
+
+
+.about {
+    position: absolute;
+    top: 80px; /* Adjust top position as needed */
+    right: calc(50% - 250px); /* Adjust right position as needed */
+    transform: translateX(50%); /* Center the element horizontally */
+    height: 50px; /* Adjust height as needed */
+    width: 180px; /* Adjust width as needed */
+    background-color: white; /* Adjust background color as needed */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+
+h1{
+    font-size: 25px;
+}
+
+
+
+.position-relative {
+    position: relative;
+}
+
+.above-text {
+    position: absolute;
+    top: -24px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 5px 10px; 
+    font-size: 12px; 
+    z-index: 1;
+}
+
+.above-line {
+    top: -21px;
+    font-size: 14px;
+}
+
+.line,
+.borline
+ {
+    position: relative;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    top: -13px; 
+    right: 48%; 
+    border-top: 2px solid black; 
+    width: calc(100% - 5px); 
+    z-index: -1; 
+}
+
+.borline::after{
+    content: '';
+    position: absolute;
+    top: -13px; 
+    left: 48%; 
+    border-top: 2px solid black; 
+    width: calc(100% - 5px); 
+    z-index: -1; 
+}
+
+
