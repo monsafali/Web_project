@@ -3,16 +3,16 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 50px;
+    
 
 }
 table tr td {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .bottom {
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .noborder {
@@ -32,26 +32,11 @@ td sup {
     font-weight: normal;
 }
 
-/* 
-.about{
-    position: absolute;
-    top: 85px;
-    right: 330px;
-    justify-content: start;
-    height: 50px;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: flex-start;
-    z-index: 1;
-} */
-
 
 .about {
     position: absolute;
-    top: 80px; /* Adjust top position as needed */
-    right: calc(50% - 250px); /* Adjust right position as needed */
+    top:    40px; /* Adjust top position as needed */
+    right: calc(50% - 240px); /* Adjust right position as needed */
     transform: translateX(50%); /* Center the element horizontally */
     height: 50px; /* Adjust height as needed */
     width: 180px; /* Adjust width as needed */
@@ -65,7 +50,8 @@ td sup {
 
 
 h1{
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
