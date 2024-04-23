@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    
+}
+
+.img img {
+    height: 50px;
+    width: auto;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+.links a:hover{
+    font-weight: bold;
+    transition: 0.4s ease-in;
+}
+.links a.active {
+    text-decoration: underline;
+    color: rgb(53, 70, 221);
+}
+
+.text {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin: 200px 300px;
+    gap: 100px;
+}
+.data, .clock {
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 400px;
+}
+.data h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.data p {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.data i {
+    font-size: 15px;    
+}
+.data a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    padding-top: 50px;
+}
+
+.ft {
+    display: flex;
+    flex-direction: column;
+}
+
+.ft h3,
+h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.silk h2 {
+    font-size: 20px;
+}
+.silk span {
+    font-size: 15px;
+}
+
+.ft a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+}
+.try p a {
+    color: rgb(66, 66, 161);
+}
+
+a:hover {
+    color: rgb(66, 66, 161);
+    font-weight: bold;
+    transition: color 0.2s ease-in, font-weight 0.2s ease-in; /* Apply transition to both color and font-weight */
+}
+
+
+
+/* about page */
+.my_info {
+    padding: 100px 300px;
+   
+}
+.my_info h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.my_info p {
+    text-align: justify;
+}
+
+
+
+
+/* contact us page */
+
+
+.bg-img {
+    position: relative;
+    background-image: url(src/form.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color for visibility */
+    text-align: start; /* Align text horizontally */
+    height: 400px;
+    width: 600px;
+    /* border: 1px solid black; */
+    padding-bottom: 50px;
+}
+.content h1 {
+    font-size: 30px;
+}
+.content p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff;
+    /* font-weight: bold; */
+}
+
+.inside {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #000;
+}
+.address {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.address a {
+    text-decoration: none;
+    color: #fff;
+}
+.address a i {
+    margin-right: 10px;
+}
+
+.inline {
+    display: block;
+    margin-left: -90px;
+}
+.inline .sendme {
+    margin-left: -90px;
+}
+
+.input button {
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+}
+.input button:hover{
+    background-color: #a07070;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+
+.input-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust spacing between input fields */
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.height {
+    height: 30px;
+}
+.input .input1 {
+    width: 300px;
+}
+.input #email {
+    width: 560px;
+}
+.input .width {
+    width: 560px;
+}
+.input .mg-height {
+    height: 80px;
+}
+
+label {
+    margin-bottom: 5px; 
+}
+
+input {
+    width: 200px; /* Adjust width of input field */
+}
+#budget {
+    padding-left: 10px;
+}
+
+
+
+
+
+/* Sign IN Page */
+
+.sing-img {
+        position: relative;
+        background-image: url(src/singup.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .sing-content {
+        position: absolute;
+       top: 60%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color: white; /* Adjust text color for visibility */
+        text-align: start; /* Align text horizontally */
+        height: 500px;
+        width: 400px;
+        /* border: 1px solid black; */
+        padding-bottom: 50px;
+    }
+    .singinheight {
+        height: 40px;
+        width: 320px;
+        padding: 0  10px;
+    }
+    .input-height i {
+        font-size: 25px;
+        padding: 3px;
+        border: 1px solid black;
+        height: 40px;
+        width: 40px;
+        margin-right: -5px;
+
+    }
+
+    .sing-content {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .sing-content button {
+        padding: 10px 40px;
+        border-radius: 30px;
+        background-color: red;
+        color: #ffff;
+        font-weight: 700;
+    }
+    .sing-content button:hover{
+    background-color: #a07070;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+    .singup,
+    .forget{
+        display: flex;
+        justify-content: end;
+        text-align: center;
+    }
+    .singup{
+        margin-top: 15px;
+    }
+
+    .forget,
+    .singinbtn button {
+        margin-bottom: 30px;
+    }
+    .singinbtn {
+        border-bottom: 1px solid rgb(194, 193, 193);
+
+    }
+    
+  /* Sign Up */
+
+  
+.singup-img {
+    position: relative;
+    background-image: url(src/sing\ in.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.singup-content {
+    position: absolute;
+   top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color for visibility */
+    text-align: start; /* Align text horizontally */
+    height: 500px;
+    width: 100%;    
+    /* border: 1px solid black; */
+}
+
+
+.singupform{
+    margin-top: -100px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.singupform >button,
+.singupform input
+{
+    height: 35px;
+    width: 250px;
+}
+    
+.singupform input {
+    padding: 10px;
+    border: 1px solid black;
+}
+.singupform >button {
+    background-color: red; 
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.signinwithaccount button{
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.signinwithaccount .leftbtn {
+    margin-right: 100px;
+}
+
+
+.signinwithaccount button:hover,
+.singupform >button:hover{
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    transition: 0.3s ease-in;
+}
+
+ 
