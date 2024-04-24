@@ -47,6 +47,41 @@
     color: rgb(53, 70, 221);
 }
 
+/* E-commerce section */
+.e-top {
+    margin-bottom: 100px;
+}
+.e_commerce_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(230, 230, 230);    
+    margin-top: 60px;
+}
+
+.box-img{ 
+    height: 400px;
+    width: 23%;
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 20px 0px 15px;
+    background-color: #fff   
+}
+
+.box-img .boxex-img {
+    height: 300px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.box-img h2,
+.box-img a {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 .text {
     display: flex;
     margin: 0 auto;
@@ -157,7 +192,7 @@ a:hover {
     height: 400px;
     width: 600px;
     /* border: 1px solid black; */
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .content h1 {
     font-size: 30px;
