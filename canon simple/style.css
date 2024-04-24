@@ -47,52 +47,19 @@
     color: rgb(53, 70, 221);
 }
 
-/* E-commerce section */
-.e-top {
-    margin-bottom: 100px;
-}
-.e_commerce_img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: rgb(230, 230, 230);    
-    margin-top: 60px;
-}
 
-.box-img{ 
-    height: 400px;
-    width: 23%;
-    /* border: 1px solid black; */
-    margin: 10px;
-    padding: 20px 0px 15px;
-    background-color: #fff   
-}
-
-.box-img .boxex-img {
-    height: 300px;
-    background-size: cover;
-    margin: 10px;
-}
-
-.box-img h2,
-.box-img a {
-    margin-left: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
+/* hero section */
 .text {
     display: flex;
     margin: 0 auto;
     align-items: center;
-    margin: 200px 300px;
+    margin: 300px 300px 0px 300px;
     gap: 100px;
 }
 .data, .clock {
     /* border: 1px solid black; */
     height: 400px;
-    width: 400px;
+    width: 600px;
 }
 .data h1 {
     font-size: 40px;
@@ -109,6 +76,97 @@
     font-size: 20px;
     text-decoration: none;
 }
+
+
+
+
+/* E-commerce section */
+
+.e_commerce_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(230, 230, 230);    
+    margin-top: 40px;
+    padding-top: 50px;
+    /* padding-bottom: 100px; */
+}
+
+.box-img{ 
+    height: 400px;
+    width: 23%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid rgb(155, 141, 141);
+    background-color: #fff;
+    border-radius: 20px; 
+    margin-top: 40px;
+}
+
+.box-img .boxex-img {
+    height: 300px;
+    background-size: cover;
+    /* margin: 10px; */
+    border-radius: 20px; 
+    border: 1px solid rgb(117, 99, 99);
+    
+}
+
+.box-img .boxex-img:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease; 
+}
+
+.box-img h2 {
+    margin-top: 15px;
+}
+
+.price h3 {
+    margin-top: -10px;
+    font-size: 30px;
+    color: rgb(26, 224, 158);
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart input {
+    width: 30px;
+    margin-right: 10px;   
+}
+.cart i {
+    color: blue;
+    font-size: 20px;
+}
+.cart i:hover{
+    color: black;
+    transition: 0.3s ease;
+    transform: scale(1.03);
+}
+
+.nextpagebtn {
+    text-align: center;
+    margin-top: 100px;
+}
+.nextpagebtn button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(40, 168, 168);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.nextpagebtn button:hover {
+    background-color: black;
+    transition: 0.8s ease;
+}
+
+
 
 /* footer */
 .footer {
@@ -189,7 +247,7 @@ a:hover {
     transform: translate(-50%, -50%);
     color: white; /* Adjust text color for visibility */
     text-align: start; /* Align text horizontally */
-    height: 400px;
+    height: 460px;
     width: 600px;
     /* border: 1px solid black; */
     padding-bottom: 100px;
@@ -240,6 +298,7 @@ a:hover {
     background-color: #000;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .input button:hover{
     background-color: #a07070;
@@ -256,7 +315,11 @@ a:hover {
     margin-bottom: 20px; /* Adjust spacing between input fields */
 }
 
-
+textarea {
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+    resize: none;
+}
 .input {
     display: flex;
     flex-direction: column;
@@ -343,6 +406,7 @@ input {
         background-color: red;
         color: #ffff;
         font-weight: 700;
+        cursor: pointer;
     }
     .sing-content button:hover{
     background-color: #a07070;
@@ -396,9 +460,9 @@ input {
 
 
 .singupform{
-    margin-top: -100px;
-    height: 300px;
-    width: 300px;
+    margin-top: -200px;
+    height: 400px;
+    width: 500px;
     background-color: white;
     border: 1px solid black;
     color: #000;
@@ -416,7 +480,8 @@ input {
 .singupform input
 {
     height: 35px;
-    width: 250px;
+    width: 300px;
+    border-radius: 10px;
 }
     
 .singupform input {
@@ -428,6 +493,7 @@ input {
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
+    cursor: pointer;
 }
 .signinwithaccount button{
     padding: 5px 10px;
