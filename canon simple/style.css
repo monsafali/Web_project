@@ -49,6 +49,42 @@
 
 
 /* hero section */
+.hero-img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+   
+}
+.hero-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin-bottom: -200px;
+    margin-top: 50px;
+    transform: scale(1.1);
+}
+
+
+.arrival-description h1{
+    height: 100px;
+    width: 300px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+ 
+}
+
+
+
+
+
 .text {
     display: flex;
     margin: 0 auto;
@@ -169,6 +205,7 @@
 
 
 /* footer */
+
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -198,6 +235,9 @@ h2{
     text-decoration: none;
     color: #000;
     margin-bottom: 5px;
+    width: 100%; /* Set the width to ensure consistent dimensions */
+    border-bottom: 1px solid transparent;
+    display: inline-block;
 }
 .try p a {
     color: rgb(66, 66, 161);
@@ -205,7 +245,7 @@ h2{
 
 a:hover {
     color: rgb(66, 66, 161);
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.2s ease-in, font-weight 0.2s ease-in; /* Apply transition to both color and font-weight */
 }
 
