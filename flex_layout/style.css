@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(252, 173, 173);
+}
+
+label.logo {
+    font-size: 35px;
+    color: #fff;
+    margin: 0 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color:  rgb(252, 173, 173);
+}
+
+
+nav ul li a.active,a:hover{
+    text-decoration: underline;
+    color: blue;
+
+
+}
+
+
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fff;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ ul {
+    left: 0;
+
+}
+
+
+/* training-section */
+
+.training-section {
+    width: 100%;
+    height: 650px;
+    background: url(src/back1.jpg) center;
+    background-size: cover;
+}
+
+.training-section2 h1 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.container {
+    /* width: 1170px; */
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    background-color: azure;
+
+    padding: 40px;
+}
+
+
+.training-items {
+    flex-basis: 22%;
+    /* background: red; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    /* padding: 5px; */
+    padding-bottom: 10px;
+    
+}
+.training-items img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.training-items h3{
+padding: 10px 0;
+}
+.training-items p {
+    font-size: 13px;
+    padding: 0px 0 10px 0;
+}
+
+.training-items button {
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(185, 30, 30);
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.training-items:hover {
+    background-color: rgb(63, 63, 211);
+}
+
+
+.training-items h3,
+.training-items p {
+    padding: 5px;
+}
+
+.training-items:hover h3,
+.training-items:hover p {
+    color: white;
+}
+.training-items:hover button {
+    background-color: white;
+    color: blue;
+}
+
+
+
+
+/* Footer */
+
+/* footer section */
+
+
+.mainfooter {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: azure;
+}
+.tracking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tracking a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.tracking button {
+    margin-top: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tracking button:hover {
+    background-color: skyblue;
+}
+.tracking button i {
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 0 0;
+}
+
+.ABOUT {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.ABOUT a {
+    text-decoration: none;
+}
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 100px;
+    gap: 5px;
+}
+
+.company a {
+    text-decoration: none;
+}
+.mgtop{
+    margin-top: 40px;
+    
+}
+.nesletters {
+    margin-right: 100px;
+}
+.nesletters h5 {
+    margin-bottom: 20px;
+}
+.nesletters input {
+    height: 38px;
+    padding: 10px;
+}
+.nesletters button {
+    background-color: red;
+    margin-left: -10px;
+    padding: 10px 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.nesletters button:hover{
+    background-color: skyblue;
+}
+.nesletters .icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 20px;
+} 
+
+
+ */new 
+
+ /* Footer */
+
+/* footer section */
+.mainfooter {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: azure;
+}
+
+.tracking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tracking a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tracking button {
+    margin-top: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tracking button:hover {
+    background-color: skyblue;
+}
+
+.tracking button i {
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 0 0;
+}
+
+.ABOUT {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.ABOUT a {
+    text-decoration: none;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 100px;
+    gap: 5px;
+}
+
+.company a {
+    text-decoration: none;
+}
+
+.mgtop {
+    margin-top: 40px;
+}
+
+.nesletters {
+    margin-right: 100px;
+}
+
+.nesletters h5 {
+    margin-bottom: 20px;
+}
+
+.nesletters input {
+    height: 38px;
+    padding: 10px;
+}
+
+.nesletters button {
+    background-color: red;
+    margin-left: -10px;
+    padding: 10px 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.nesletters button:hover {
+    background-color: skyblue;
+}
+
+.nesletters .icons {
+    margin-top: 30px;
+}
+
+.icons i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+/* For iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .mainfooter {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .tracking, .ABOUT, .company, .nesletters {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .nesletters {
+        margin-right: 0;
+    }
+}
+
+/* For Android screens */
+@media only screen and (max-width: 767px) {
+    .mainfooter {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .tracking, .ABOUT, .company, .nesletters {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .nesletters {
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    label.logo {
+        font-size: 30px;
+       margin: 0 50px;
+    }
+    
+}
+
+
+@media (max-width: 955px) {   
+    
+    #checkbtn {
+        display: block;
+    }
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: azure;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        margin-top: 15px;
+    }
+    nav ul li a {
+        background-color: azure;
+        color: black;
+    }
+    label.logo {
+       margin: 0 70px;
+    }
+}
+
+/* @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+} */
+
+@media (max-width: 768px) {
+    .training-items {
+        flex-basis: 100%;
+    }
+    .tracking button {
+        padding: 0;
+        font-size: 15px;
+        margin: 0;
+        /* width: 115px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
