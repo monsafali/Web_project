@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -17,10 +19,10 @@ body {
     margin: 0 auto;
     display: grid;
     padding-left: 2rem;
-    height: 120px;
+    height: 90px;
     background-color: rgb(210, 242, 255);
     /* text-align: center; */
-    line-height: 120px;
+    line-height: 90px;
     font-size: 2rem;
     font-weight: 600;
 
@@ -36,8 +38,9 @@ body {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    margin-top: 40px;
-    background-color: rgb(176, 187, 133);
+    padding-top: 30px;
+    /* margin-top: 40px; */
+    background-color: rgb(255, 225, 225);
 
     
 }
@@ -124,6 +127,20 @@ body {
 }
 .text p {
     font-size: 0.8rem;
+}
+}
+
+
+@media (max-width: 188px) {
+    .header,
+    .footer {
+        font-size: 0.8rem;
+    }
+    .text h3{
+    font-size: 0.7rem;
+}
+.text p {
+    font-size: 0.7rem;
 }
 }
 
