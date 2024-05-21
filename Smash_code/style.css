@@ -16,7 +16,7 @@ body, html{
   width: 100%;
   overflow-x: hidden;
   padding: 0 60px;
-
+  z-index: 0;
 }
 
 
@@ -27,6 +27,8 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
+
+ 
 }
 
 .navbar {
@@ -35,7 +37,11 @@ nav{
   border: 2px solid rgb(58, 190, 223);
   border-radius: 15px; 
   margin: 15px 20px;
- 
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
 }
 
 .logo img{
@@ -94,9 +100,9 @@ nav ul li {
 
 /* project Section */
 .project{
-  margin-top: 50px;
+  margin-top: 200px;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100;
   line-height: 60px;
 }
@@ -125,7 +131,7 @@ nav ul li {
   border: 1px solid rgb(62, 232, 255);
   font-weight: 700;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .first .firstbtn {
   background-color: rgb(62, 232, 255); 
@@ -183,7 +189,7 @@ nav ul li {
   /* border: 1px solid rgb(252, 13, 13); */
   padding: 30px;
   border-radius: 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   opacity: 0.8;
 }
 .item h2{
@@ -209,8 +215,6 @@ nav ul li {
 .item .btn{
   text-align: center;
   margin-top: 30px;
-  margin-left: 42%;
-  
 }
 .btn a {
   text-decoration: none;
@@ -260,12 +264,12 @@ nav ul li {
 /* footer */
 footer {
   background-color: black;
-  width: 105%;
-  margin-left: -30px;
+  width: 100%;
+  /* margin-left: -30px; */
   
 }
 .mg{
-  margin: 50px 100px;
+  margin: 50px 50px;
 }
 .contact-info{
   /* display: flex;
@@ -274,7 +278,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid rgb(82, 77, 77);
-  padding: 50px 0;
+  padding-top: 20px;
   color: white;
 
 }
@@ -282,14 +286,22 @@ footer {
   display: flex;
 }
 .adrs i{
-  font-size: 1.7rem;
-  margin-right: 5px;
+  font-size: 2rem;
+  margin-right: 15px;
   color: rgb(62, 232, 255);
 }
 
+.option>h4{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+
 .option>p {
   margin-top: 5px;
+  font-weight: bold;
   opacity: 0.5;
+  font-size: 1.2rem;
 }
 
 /* 2nd section */
@@ -300,12 +312,34 @@ grid-template-columns: repeat(3, 1fr);
 color: #fff;
 justify-content: space-between;
 }
+
+.below-lin {
+  height: 2px;
+  width: 60px;
+  background-color: rgb(62, 232, 255);
+ position: relative;
+ z-index: 0;
+ margin-top: -25px;
+ margin-bottom: 30px;
+}
+.below-lin-social{
+  height: 2px;
+  width: 60px;
+  background-color: rgb(62, 232, 255);
+  margin-top: -25px;
+  position: absolute;
+  z-index: 10;
+}
+
+
 .mg-left {
   margin-right: 30px;
 }
 .contact{
   margin-top: 20px;
-  padding-bottom: 40px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .contact img{
   margin-left: -25px;
@@ -329,7 +363,7 @@ justify-content: space-between;
 }
 .about-us {
   display: flex;
-  gap: 100px;
+  gap: 150px;
 }
 
 
@@ -337,14 +371,23 @@ justify-content: space-between;
   margin-bottom: 20px;
   color: white;
   text-decoration: none;
+  opacity: 0.8;
 }
 .oneside a i {
   margin-right: 8px;
+  opacity: 0.8;
+}
+
+.oneside a:hover{
+  color: rgb(62, 232, 255);
+  transition: ease-in;
+  transition-duration: 0.2s;
 }
 
 .star5{
   height: 150px;
-  width: 150px;
+  width: 180px;
+  padding-left: 30px;
 }
 
 
@@ -356,7 +399,7 @@ justify-content: space-between;
 }
 
 .social-links a{
-   font-size: 2.3rem;
+   font-size: 2.1rem;
   color: #fff;
   border-radius: 50%;
   
@@ -369,7 +412,7 @@ display: flex;
 text-align: center;
 justify-content: center;
 align-items: flex-start;
-margin-top: -40px;
+margin: 40px;
 color: #fff;
 opacity: 0.5;
 }
@@ -390,18 +433,90 @@ opacity: 0.5;
 }
 }
 
+/* ....................... */
+
+
+.first,
+.second {
+  margin: 0% auto;
+}
+.first button {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid rgb(62, 232, 255);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.first .firstbtn {
+  background-color: rgb(62, 232, 255); 
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+
+
+.second {
+    margin-bottom: 10px;
+}
+
+.second button {
+  padding: 7px 5px;
+  color: rgb(65, 173, 187);
+  background-color: #fff;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  margin-left: -8px;
+  font-size: 1rem;
+}
+.second .lnding {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.second .flstc{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgb(62, 232, 255); 
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+
+
+/* ........................... */
+
+@media (max-width: 658px){
+  .project{
+  font-size: 1.6rem;
+  }
+  .details{
+    gap: 30px;
+  }
+  .first{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    gap: 50px;
+  }
+}
+
 
 
 @media (max-width: 768px) {
   .col {
     width: 100%;
+    margin: 0;
   }
   .col2{
     width: 100%;
+    margin: 0;
   }
   #wrapper{
     padding: 0 50px;
-  }
+    }
+    .project{
+      margin-top: 100px;
+      }
   
 .contact-info{
   display: flex;
@@ -422,20 +537,31 @@ opacity: 0.5;
   text-decoration: none;
   color: aquamarine;
 }
+.item .btn{
+  text-align: start;
+  margin-top: 30px;
+}
 
 
 
 /* navbar */
 .navbar {
   height: 70px;
-  width: 105%;
+  width: 100%;
   align-items: center;
   /* justify-content: center; */
   text-align: center;
   display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  
 }
 
 nav ul {
+  background-image: url("https://www.smashcode.dev/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsmash-code.appspot.com%2Fo%2Fothers%252Flogo.png%3Falt%3Dmedia%26token%3D03ad23b2-117d-405e-b75d-cf6ff119274f&w=128&q=100");
+  box-sizing: content-box;
+  background-repeat: no-repeat;
   position: fixed;
   top: 0px;
   left: 0;
@@ -447,16 +573,23 @@ nav ul {
   left: -100%;
   transition: all 0.3s ease;
   z-index: 1;
+  border-right: 2px solid rgb(62, 232, 255);
+  padding-top: 100px;
+
 }
+
 nav ul li a {
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .btn button {
   display: none;
 }
 nav ul li {
   margin: 40px 0;
-
 }
 nav .menu-btn i{
   display: block;
@@ -498,7 +631,12 @@ nav .menu-btn i {
   }
 }
 
-
+@media (max-width: 868px){
+   nav ul li a {
+    font-size: 1.1rem;
+    ;
+   }
+}
 
 
 
@@ -510,8 +648,6 @@ nav .menu-btn i {
   .item p {
     font-size: 1rem;
   }
-}
-@media (max-width: 968px){
   .item h2{
     font-size: 0.8rem;
     
@@ -521,6 +657,8 @@ nav .menu-btn i {
   }
 
 }
+
+
 
 @media (max-width: 1022px){
 .contact-info2{
@@ -528,5 +666,6 @@ nav .menu-btn i {
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
+
 }
   
