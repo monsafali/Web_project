@@ -519,6 +519,13 @@ opacity: 0.5;
 .project {
   margin-top: -50px;
 }
+nav ul {
+  width: 50%;
+}
+.boxex {
+   padding: 0 10px;
+}
+
 }
 
 
@@ -555,9 +562,7 @@ opacity: 0.5;
     width: 100%;
     margin: 0;
   }
-  #wrapper{
-    /* padding: 0 50px; */
-    }
+
     .project{
       margin-top: 100px;
       }
@@ -611,7 +616,7 @@ nav ul {
   left: 0;
   background-color: #3d3636;
   height: 100vh;
-  width: 30%;
+  width: 40%;
   display: block;
   text-align: center;
   left: -100%;
