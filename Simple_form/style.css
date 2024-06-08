@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(202, 216, 193);
+    
+   
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    height: 500px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+
+/* Common */
+input {
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+/* names */
+
+.name {
+    display: flex;
+   gap: 20px;
+}
+
+.fname input {
+    width: 100%;
+}
+.lname input {
+    width: 100%;
+}
+
+/* email */
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Queery */
+.query{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.query input {
+    height: 12px;
+}
+
+.general,
+.support {
+    border: 1px solid black;
+    width: 48%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.general label,
+.support label{
+    margin-left: 10px;
+}
+
+
+
+/* message */
+.message {
+    display: flex;
+    flex-direction: column;  
+   
+}
+
+textarea {
+    resize: vertical; /* Allow only vertical resizing */
+    width: 100%; /* Set a fixed width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+    padding: 5px 10px;
+}
+
+
+
+/* consider */
+.consider {
+    display: flex;
+    align-items: center;
+}
+
+.consider label{
+    margin-left: 10px;
+}
+
+
+/* Button */
+
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
