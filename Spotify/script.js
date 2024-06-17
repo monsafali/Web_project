@@ -3,9 +3,10 @@
 // initialize the variable
 
 let songindex = 0;
-let audioElement = new Audio('1.mp3');
+let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
+let gift = document.getElementById("gif");
 
 let songs = [
     { songName: "Salam-e-Ishq",   filePath: "songs/1.mp3",coverPath: "covers/1.jpg"},
@@ -26,19 +27,31 @@ let songs = [
 
 // handle paly/pause click
 
-masterPlay.addEventListener('click'), ()=>{
-    if(audioElement.pause || audioElement.currentTime<=0){
-        audioElement.play()
-        masterPlay.classList.remove("fa-play")
-        masterPlay.classList.add("fa-circle-pause")
+masterPlay.addEventListener('click', ()=>{
+    if(audioElement.paused || audioElement.currentTime<=0){
+        audioElement.play();
+        masterPlay.classList.remove("fa-play");
+        masterPlay.classList.add("fa-circle-pause");
+        gift.style.opacity = 1
+    }else{
+        audioElement.pause();
+        masterPlay.classList.add("fa-play");
+        masterPlay.classList.remove("fa-circle-pause");
+        gift.style.opacity = 0
     }
-});
+}) 
+
 
 
 
 // listen to events
-myProgressBar.addEventListener("timeupdate", ()=>{
-    console.log("Time Update successfuly")
-    // update seekbar
+audioElement.addEventListener("timeupdate", ()=>{
+   // update seekbar
+    progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    myProgressBar.value = progress
+})
+
+myProgressBar.addEventListener("change",()=>{
+    audioElement.currentTime = myProgressBar.value * audioElement
 })
 
