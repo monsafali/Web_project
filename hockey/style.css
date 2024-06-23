@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 100px;
+}
+
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(180, 159, 180);
+}
+
+.heading2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 205, 240);
+}
+
+.navbarbg {
+   border: 1px solid rgb(231, 210, 210);
+   margin-bottom: 20px;
+   box-shadow: 0 2px 8px rgb(231, 220, 220);
+}
+
+.container{
+    margin-top: 150px;
+}
+
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(255, 17, 17);
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: 200px;
+
+}
+
+.carousel-control-prev-icon{
+    margin-right: 400px;
+}
+
+
+
+
+
+/* Section 2 */
+
+
+.mg-top {
+    margin-top: 50px;
+}
+.containerd {
+    margin-top: 50px;
+}
+
+.containerd h4 {
+    font-size: 20px;
+}
+.containerd img{
+    margin-top: 50px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+
+.containerd h4 {
+    margin-bottom: 15px;
+}
+
+
+
+/* couchsection */
+.couchsection {
+    display: flex;
+    background-color: azure;
+    padding: 50px 100px;
+    gap: 100px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.couchsection img{
+height: 300px;
+border-radius: 10px;
+}
+
+.couchsection h3 {
+    font-size: 25px;
+}
+
+
+/* find game section */
+.flexbox {
+    display: flex;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width:468px) {
+    .couchsection {
+   flex-direction: column;
+   padding: 20px 0px;
+}
+}
