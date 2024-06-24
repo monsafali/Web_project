@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .logo {
     height: 100px;
 }
-
-
 
 .heading {
     display: flex;
@@ -128,7 +130,6 @@ border-radius: 10px;
     align-items: flex-start;
 }
 
-
 .number {
     width: 5%; 
 }
@@ -157,4 +158,59 @@ border-radius: 10px;
    flex-direction: column;
    padding: 20px 0px;
 }
+.couchsection img {
+    /* width: 90%; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.couchsection h3 {
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.feature {
+    flex-direction: column;
+}
+
+
+
+
+.number {
+    width: 100%; 
+}
+.title {
+    width: 100%;
+}
+.desc {
+    width: 100%;
+}
+.icon {
+    
+    background-color: black;
+    padding: 15px;
+    color: #fff;
+    border-radius: 50%;
+}
+.game-section h2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.carousel-control-next-icon {
+    background-color: rgb(255, 17, 17);
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: 50px;
+
+}
+
+.carousel-control-prev-icon{
+    margin-right: 250px;
+}
+
+
+
 }
