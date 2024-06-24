@@ -100,14 +100,54 @@ border-radius: 10px;
 
 
 /* find game section */
-.flexbox {
-    display: flex;
-    
+
+.game-section {
+    background-color: blanchedalmond;
+    padding: 40px;
+}
+.game-section h2 {
+    width: 400px;
+    margin: 0 auto;
 }
 
-.row {
+.feature  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+}
+
+
+.number {
+    width: 5%; 
+}
+.title {
+    width: 20%;
+}
+.desc {
+    width: 50%;
+}
+.icon {
+    
+    background-color: black;
+    padding: 15px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.icon i {
+    transform: rotate(320deg);
 }
 
 
