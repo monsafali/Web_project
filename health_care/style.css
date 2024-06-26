@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+.logo{
+    height: 80px;
+    cursor: pointer;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+}
+
+/* dashboard */
+#dashboard{
+    margin-top: 100px;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+
+#dashboard h2{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Chatbot */
+
+#chatbot{
+    margin-top: 100px;
+    background-image: url(assets/backauth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.chatbot {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 100px; */
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.chatbot h2,
+.chatbot p {
+    color: #fff;
+}
+
+.chatbot >input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chatbot button{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+/* 
+body {
+    background-image: linear-gradient(to right, rgb(233, 147, 147), rgb(236, 199, 130), rgb(223, 223, 158), rgb(97, 231, 97), rgb(103, 103, 255), rgb(183, 114, 233), rgb(223, 155, 223));
+    color: #000;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+} */
+
+
+
+
+/* login*/
+
+
+#login{
+    margin-top: 100px;
+}
+
+
+.container {
+    background-image: url(assets/backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+   
+}
+
+
+.logintxt{
+    height: 300px;
+    width: 30%;
+    /* border: 1px solid black; */
+    top: 80px;
+    left: 100px;
+    position: relative;
+}
+
+
+.container h1 {
+    color: red;
+    /* text-align: center; */
+    margin-bottom: 15px;
+
+}
+
+.container a {
+    text-decoration: none;
+    color: darkblue;
+    
+}
+
+.form-control {
+    position: relative;
+    margin: 10px 0 20px;
+    width: 100%;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #000;
+}
+.form-control input:focus, 
+.form-control input:valid {
+    outline: 0;
+    /* border: none; */
+    border-bottom-color: rgb(236, 66, 14);
+}
+
+
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: rgb(12, 190, 250);
+    transform: translateY(-30px);
+    /* transition: 0.3s ease-in; */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    /* width: 80%; */
+    padding: 15px;
+    background: rgb(203, 228, 238);
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.btn:focus {
+    outline: 0;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+.text {
+    color: #fff;
+}
