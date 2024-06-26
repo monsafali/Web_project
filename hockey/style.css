@@ -152,6 +152,38 @@ border-radius: 10px;
 }
 
 
+/* image gallery section */
+
+
+/* Styles for the autoplay image slider */
+.autoplay-slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.autoplay-slide {
+    display: none;
+}
+
+.autoplay-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+
+
 
 @media (max-width:468px) {
     .couchsection {
