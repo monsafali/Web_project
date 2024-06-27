@@ -17,7 +17,34 @@ let btn = document.getElementById("clickbtn");
         }
     });
 
+    
 
+
+
+    // singup
+
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var form = document.getElementById('registerForm');
+            var loginButton = document.getElementById('loginButton');
+
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+
+            loginButton.addEventListener('click', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    form.classList.add('was-validated');
+                }
+            });
+        }, false);
+    })();
 
 
 
