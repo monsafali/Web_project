@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="icon/icon.png">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <nav class="bg-gray-800">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center   ">
+            <!-- Logo and Menu Items -->
+            <div class="flex items-center space-x-5 w-full">
+                <img src="icon/logo.png" alt="Logo" class="h-8">
+                <div class="hidden md:flex space-x-7 flex-grow justify-end ">
+                    <a href="#" class="text-white py-2 ">Home</a>
+                    <a href="#" class="text-white py-2 ">Dashboard</a>
+                    <a href="#" class="text-white py-2">ChatBot</a>
+                    <a href="#" class="text-white login-btn ">Login</a>
+                    <a href="#" class="text-white signup-btn">SignUp</a>
+                </div>
+            </div>
+            <!-- Hamburger menu icon -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile menu (hidden by default on larger screens) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+            <a href="#" class="block py-2 px-4 text-white">Home</a>
+            <a href="#" class="block py-2 px-4 text-white">Dashboard</a>
+            <a href="#" class="block py-2 px-4 text-white">ChatBot</a>
+            <a href="#" class="block py-2 px-4 text-white login-btn">Login</a>
+            <a href="#" class="block py-2 px-4 text-white signup-btn">Sign Up</a>
+        </div>
+    </nav>
+    
+    
+
+    
+
+    <script src="app.js"></script>
+</nav>
+</body>
+</html>

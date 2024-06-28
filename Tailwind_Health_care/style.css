@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.login-btn,
+.signup-btn {
+    padding: 0.5rem 0rem;
+    width: 80px; 
+    text-align: center;
+    border-radius: 0.25rem; /* Rounded corners */
+    border: 1px solid white; /* Border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+@media (max-width:768px) {
+.login-btn,
+.signup-btn{
+    margin-bottom: 10px;
+}
+    
+}
+
