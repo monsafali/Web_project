@@ -6,12 +6,9 @@
     <title>Health Care</title>
     <link rel="icon" type="image/png" href="icon/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
         <div class="container-fluid d-flex justify-content-between">
             <a class="nav-link" href="index.html">
@@ -23,22 +20,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="dashboard.html">Dashboard</a>
+                        <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="chatbot.html">Chatbot</a>
                     </li>
                     <li class="nav-item">
                         <button class="account-btn">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link active" href="login.html">Login</a>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="account-btn">
-                            <a class="nav-link active" href="signup.html">Sign Up</a>
+                            <a class="nav-link" href="signup.html">Sign Up</a>
                         </button>
                         
                     </li>
@@ -47,43 +44,32 @@
         </div>
     </nav>
 
- <section id="signup">
-    <div class="container2">
-        <div class="singup">
-            <h2 style="color: #f88c00;">Register Form</h2>
-            <div class=" row  ">
-                <div class="col-sm-6 mt-4">
-                    
-                    <form id="registerForm" action="/register" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
-                        </div>
-                
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                        <a href="login.html" class="btn btn-primary" id="loginButton">Login</a>
-                    </form>
-                    
 
+    <section id="dashboard">
+        <div class="content">
+            <form action="" id="formdiv">
+                <div>
+                    <h2>Welcome to Heart Disease Detection and Prevention System</h2>
                 </div>
-            </div>
+                <div class="div">
+                    <input type="text" placeholder="Email or Username" id="username">
+                </div>
+                <div class="div">
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <div class="div">
+                    <p>Forgot your password? <a href="#">Recover Password</a></p>
+                </div>
+                <button type="submit">Login</button>
+                <div class="div">Or</div>
+                <div class="div">
+                    <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+                </div>
+            </form>
         </div>
+    </section>
     
-
-    </div>
- </section>
-    
-    <footer class="footer ">
+    <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
@@ -114,18 +100,6 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-    
-
-
