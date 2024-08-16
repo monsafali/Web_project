@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-image: url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-header.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-attachment: fixed;
+  
+}
+
+.navbar-nav {
+  top: 45px;
+  position: relative;
+}
+
+#navbar {
+  display: flex; 
+  align-items: center;  
+  justify-content: space-between;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: yellow;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+  color: white;
+}
+
+#bar{
+    color: white;
+}
+
+.hero-container {
+    position: absolute;
+    top: 60%;
+    color: white;
+    display: flex;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 30px;
+  }
+  .hero-text h1 {
+    font-size: 74px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .hero-text h1 span {
+    color: rgba(255, 166, 0, 0.979);
+  }
+  
+  .hero-text p {
+    font-size: 14px;
+    padding: 0 270px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text .btns button {
+    margin: 10px;
+    padding: 20px 50px;
+    /* background-color: #088178; */
+    border: none;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .f-btn{
+    background-color: gray;
+    border: none;
+  }
+  
+  .s-btn{
+    background-color: yellow;
+  }
+
+  .s-btn:hover{
+    background-color: purple;
+  }
+
+
+/* Start Media Query */
+
+@media (max-width: 799px) {
+    #header {
+        padding: 20px 40px;
+    }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 100px;
+    left: -800px;
+    width: 100%;
+    background-color: lightgray;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+    padding: 20px 0 0 10px;
+    transition: 0.6s;
+    align-items: center;
+  }
+
+  #navbar.active {
+    left: 0px;
+  }
+
+  #navbar li {
+    /* margin-bottom: 25px; */
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(146, 138, 138);
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: start;
+  }
+
+  #mobile {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #lgbag {
+    display: none;
+  }
+}
