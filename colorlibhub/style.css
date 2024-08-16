@@ -68,6 +68,7 @@ html {
     color: white;
 }
 
+/* Clean Slick */
 .hero-container {
     position: absolute;
     top: 60%;
@@ -88,6 +89,7 @@ html {
     color: rgba(255, 166, 0, 0.979);
   }
   
+
   .hero-text p {
     font-size: 14px;
     padding: 0 270px;
