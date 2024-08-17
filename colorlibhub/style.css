@@ -5,10 +5,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+
 }
 
 html {
   scroll-behavior: smooth;
+}
+#wraper{
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #header {
@@ -17,32 +24,34 @@ html {
   padding: 20px 80px;
   background-image: url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-header.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 900px;
   z-index: 0;
   position: sticky;
   top: 0;
   left: 0;
   position: absolute;
   background-attachment: fixed;
-  
 }
 
 .navbar-nav {
   top: 45px;
   position: relative;
+
 }
 
 #navbar {
   display: flex; 
   align-items: center;  
   justify-content: space-between;
+  
 }
 
 #navbar li {
   list-style: none;
   padding: 0 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 #navbar li a {
@@ -74,7 +83,7 @@ html {
     top: 60%;
     color: white;
     display: flex;
-    text-align: center;
+    text-align: center; 
   }
 
   .hero-text {
@@ -119,6 +128,144 @@ html {
   .s-btn:hover{
     background-color: purple;
   }
+
+
+  /* ABout */
+.about {
+  position: absolute;
+  top: 155%;
+  text-align: center;
+  }
+
+.para {
+  width: 70%;
+  margin: 0% auto;
+  text-align: justify;
+  text-align-last: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 70%;
+  margin: 0% auto;
+}
+
+.icons {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+
+}
+.skill {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f06548; /* Default color */
+  /* color: white; */
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 8px;
+  border-radius: 5px;
+}
+
+.skill:nth-child(1) .skill-percentage {
+  background-color: #f06548; /* Typography color */
+}
+
+.skill:nth-child(2) .skill-percentage {
+  background-color: #fcd404; /* Design color */
+}
+
+.skill:nth-child(3) .skill-percentage {
+  background-color: #6a5acd; /* Development color */
+}
+
+
+
+/* Projects */
+.Projects {
+  position: absolute;
+  top: 230%;
+  }
+  .Projects h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    background-color: rgb(255, 254, 249);
+    border: 1px solid rgb(247, 241, 241);
+    margin: 0px 80px;
+    
+
+  }
+
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+  }
+  
+  .flex-container > div {
+    width: 22%;
+  }
+
+  .flex-container > div img{
+    width: 100%;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+
+  .flex-container > div img:hover{
+    opacity: 0.3;
+  }
+
+
+
 
 
 /* Start Media Query */
