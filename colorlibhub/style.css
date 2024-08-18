@@ -233,14 +233,13 @@ html {
     background-color: rgb(255, 254, 249);
     border: 1px solid rgb(247, 241, 241);
     margin: 0px 80px;
-    
 
   }
 
 
   .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 
   }
@@ -259,15 +258,126 @@ html {
     backface-visibility: hidden;
   }
 
-
   .flex-container > div img:hover{
     opacity: 0.3;
   }
 
 
 
+/* Testimonial */
+.Testimonials {
+  position: absolute;
+  top: 300%;
+  background-image: url("background.png");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.Testimonials h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  margin: 0px 80px;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+}
+
+.persondetail {
+  background-color: rgb(189, 140, 201);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+  
+  .testimonial-slider {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    /* background-color: #fff; */
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: transform 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+
+/* Services */
+.Services {
+  position: absolute;
+  top: 400%;
+  width: 100%;
+
+  }
 
 
+.Services h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.Services p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.services-tech >div{
+  width: 30%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.max-heigh{
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.design > span {
+  color: #db5719;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.web > span {
+  color: #f0b638;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.seo > span {
+  color: #4b327a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /* Start Media Query */
 
 @media (max-width: 799px) {
