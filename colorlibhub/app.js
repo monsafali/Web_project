@@ -7,8 +7,6 @@ if (bar) {
     });
 }
 
-
-
 // Testimonial
 const slider = document.querySelector('.testimonial-slider');
 const slides = document.querySelectorAll('.slide');
@@ -39,7 +37,6 @@ slider.addEventListener('mousemove', (e) => {
     slider.scrollLeft = scrollLeft - walk;
 });
 
-
 slider.addEventListener('transitionend', checkSlidePosition);
 
 function checkSlidePosition() {
@@ -63,4 +60,12 @@ function checkSlidePosition() {
         });
     }
 }
+
+
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
 
