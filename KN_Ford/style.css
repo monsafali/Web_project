@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+
+body {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+#wrapper {
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0px 150px;
+}
+.container {
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+
+
+.logo-text {
+    margin-left: 1.2rem;
+    font-size: 20px;
+    font-weight: 800;
+    color: whitesmoke; 
+
+}
+.nav-items {
+    display: flex;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.nav-items div {
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+     
+}
+.nav-items div a {
+    color: whitesmoke; 
+
+}
+a {
+    text-decoration: none; 
+}
+
+.nav-items div:hover {
+    transition: 0.8s ease;
+    font-weight: 600;
+}
+
+
+/* hero Section */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 11rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem; 
+    
+    
+}
+
+
+.hero-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-section-heading {
+    font-size: 45px;
+    font-weight: 500;
+    color: whitesmoke; 
+
+}
+.role {
+    font-weight: 800;
+}
+.hero-section-sub-heading {
+    font-size: 45px;
+    line-height: 45px;
+    
+}
+.hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+    color: whitesmoke; 
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.btn-pink {
+    background-color: rgb(45, 45, 255);
+    padding: 1rem;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.view-btn{
+    background-color: whitesmoke;
+    padding: 1rem;
+    color: rgb(90, 90, 218);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 1024px) {
+    #wrapper {
+        margin: 0px 0px;
+    } 
+}
